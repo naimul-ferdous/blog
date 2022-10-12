@@ -12,6 +12,11 @@ export const BlogProvider = ({ children }) => {
       { title: `Blog Post #${blogPosts.length + 1}` },
     ]);
   };
+
+  const editBlogPost = () => {};
+
+  const deleteBlogPost = () => {};
+
   return (
     <BlogContext.Provider value={{ data: blogPosts, addBlogPost }}>
       {children}
